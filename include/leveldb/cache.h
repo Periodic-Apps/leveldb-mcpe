@@ -99,7 +99,7 @@ class DLLX Cache {
   void Unref(Handle* e);
 
   struct DLLX Rep;
-  Rep* rep_; 
+  Rep* rep_;
 
   // No copying allowed
   Cache(const Cache&);
