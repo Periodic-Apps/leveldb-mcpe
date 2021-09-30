@@ -31,7 +31,8 @@ extern DLLX Cache* NewLRUCache(size_t capacity);
 
 class DLLX Cache {
  public:
-  Cache():rep_(nullptr) { }
+    [[gsl::suppress(type.6)]]
+    Cache() :rep_(nullptr) { }
 
   // Destroys all existing entries by calling the "deleter"
   // function that was passed to the constructor.
@@ -98,8 +99,7 @@ class DLLX Cache {
   void Unref(Handle* e);
 
   struct DLLX Rep;
-  Rep* rep_;
-
+  Rep* rep_; 
   // No copying allowed
   Cache(const Cache&);
   void operator=(const Cache&);
