@@ -1,0 +1,4 @@
+module LevelDB_MCPE {
+  header "/Users/mgadda/ProjectsLocal/swift-leveldb-mpce/Sources/LevelDB_MCPE/include/leveldb/c.h"
+  export *
+}
